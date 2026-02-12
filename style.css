@@ -31,9 +31,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    gap: 20px;
-    
-
 }
 
 .mid-side {
@@ -45,8 +42,9 @@ body {
 
 .bottom-side {
     display: flex;
-    justify-content: center; /* Esto es lo que empuja los botones al centro */
-    gap: 20px;               /* Esto los separa entre sí */
+    justify-content: center;
+    align-items: center; /* Esto es lo que empuja los botones al centro */
+    
 }
 
 
