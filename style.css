@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    height: 100vh;          
+    margin: 0;
+    font-family: 'press start 2P', sans-serif;
+    background-color: #f3cedbee;
+
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    
+    /* Flexbox INTERNO para organizar título, gif y botones */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; /* ✅ El 'gap' se muda aquí */
+    
+    width: auto;
+    max-width: 600px;
+}
+
+
+.top-side{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    
+
+}
+
+.mid-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Centra horizontalmente */
+    margin-bottom: 50px;     /* Un poco de espacio debajo del GIF */
+}
+
+.bottom-side {
+    display: flex;
+    justify-content: center; /* Esto es lo que empuja los botones al centro */
+    gap: 20px;               /* Esto los separa entre sí */
+}
+
+
+button{
+    padding: 15px 30px;        /* Espacio interno: los hace grandes y gorditos */
+    border-radius: 10px;       /* Bordes redondeados tipo píldora */
+    border: none;              /* Quita el borde gris antiguo */
+    font-family: 'press start 2P', sans-serif; /* Para que la letra haga match */
+    font-size: 16px;
+    cursor:pointer;           /* El cursor se vuelve una manito al pasar por encima */
+    margin: 0 10px;
+    transition: all 0.3s ease;           /* Asegura que haya espacio a los lados de cada botón */
+}
+
+button:hover{
+    transform: translateY(-5px); /* Sube 5px */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* La sombra crece */
+}
+
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+
+#yesBtn{
+
+    background-color: #cf527c ;
+
+}
+
+#noBtn{
+
+    background-color: #dd8494 ;
+
+}
+
+
+#heart-logo{
+    width: 50; /* El corazón será más pequeño */
+    height: 50px;
+  
+
+
+}
+
+#cute-image {
+    width: 200px; /* El personaje será un poco más grande */
+    height: auto;
+
+}
+
+
