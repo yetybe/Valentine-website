@@ -89,13 +89,22 @@ button:active{
 
 #noBtn{
 
+    max-width: 90vw; 
+    
+    white-space: normal; 
+    
+    height: auto; 
+    
+    word-wrap: break-word;
+    
+    padding: 15px 20px;
     background-color: #dd8494 ;
 
 }
 
 
 #heart-logo{
-    width: 50; /* El corazón será más pequeño */
+    width: 50px; /* El corazón será más pequeño */
     height: 50px;
   
 
@@ -110,6 +119,20 @@ button:active{
 
 .cute-text{
     display : none;
+    line-height: 1.5;
 }
+
+.song-link {
+    display: none;
+    font-size: 14px;
+    color: #DC143C;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.song-link:hover {
+    text-decoration: underline;
+}
+
 
 
