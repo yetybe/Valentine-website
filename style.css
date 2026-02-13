@@ -84,6 +84,7 @@ button:active{
 #yesBtn{
 
     background-color: #cf527c ;
+    padding : 15px 20px;
 
 }
 
@@ -134,5 +135,21 @@ button:active{
     text-decoration: underline;
 }
 
+#resetBtn {
+    position: fixed; /* Lo saca del flujo normal para no empujar nada */
+    top: 20px;          /* Lo pega al techo de la tarjeta */
+    left: 20px;         /* Lo pega a la pared izquierda */
+    background: white;   /* Le quita el fondo de botón feo */
+    border: none;       /* Le quita el borde */
+    font-size: 24px;    /* Tamaño del icono */
+    cursor: pointer;    /* Manito de clic */
+    color: #ccc;        /* Color gris clarito para que no distraiga */
+    transition: all 0.3s ease;
+}
+
+#resetBtn:hover {
+    color: #FF69B4;     /* Se pone rosado al pasar el mouse */
+    transform: rotate(-180deg); /* ¡Un giro chulo al pasar el mouse! */
+}
 
 

@@ -6,6 +6,12 @@ let cuteImage = document.querySelector("#cute-image");
 let cuteText = document.querySelector(".cute-text");
 let midSide = document.querySelector(".mid-side");
 
+const resetBtn = document.querySelector("#resetBtn");
+
+resetBtn.addEventListener("click", function() {
+    location.reload();
+});
+
 noBtn.addEventListener("click" , function(){
     let fontSize = parseInt(window.getComputedStyle(yesBtn).fontSize);
     let currentPaddingY = parseInt(window.getComputedStyle(yesBtn).paddingTop);
@@ -36,7 +42,7 @@ noBtn.addEventListener("click" , function(){
 
 yesBtn.addEventListener("click" , function(){
 
-    title.innerText = "Sí , sabia que acepatrí as de inmediato nwn!!";
+    title.innerText = "Sí , sabia que aceptarías de inmediato nwn!!";
     title.style.color = "#FF69B4";
     cuteText.style.display = "block";
     cuteImage.src = "https://media1.tenor.com/m/o_5RQarGvJ0AAAAC/kiss.gif";
